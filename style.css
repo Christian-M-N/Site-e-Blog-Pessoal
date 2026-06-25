@@ -1,0 +1,14 @@
+/* CSS significa "Cascading Style Sheets", ou "Folha de Estilos em Cascata", serve para os estilos e layout da minha página */
+/* CSS colore os elementos das página utilizando o sistema de RGBA, 
+com um quarto número sendo o elemento Alpha, para opacidade (nível de transparência) */
+/* O Seletor de elementos me permite definir qual elemento do HTML vai receber o estilo
+O "body" vai afetar o elemento "<body></body>" inteiro do arquivo HTML */
+body{
+color: white;
+/* NOTA DE DEV: Não é necessário coloriar cada "Heading" com a cor branca para o efeito que quero, a propriedade "color"
+faz com que a cor de todos os elementos no HTML que herdam a propriedade "color" fiquem com essa cor, e o resto do comando abaixo serve para criar excessões na coloração e layout. */
+background: #001826;
+} /* NOTA DE DEV: Cor de backgroud pega em um site para criador de gradientes :https://cssgradient.io/
+Serviu para poupar tempo, mas entendo depois como funcionar, cada elemento é escrito.
+ /* NOTA DE DEV: Deixei somente com uma cor básica para ser o meu padrão do site por enquanto. */
+/*Se a opacidade for escrita diretamente no "body", o texto no arquivo HTML vai ficar transparente junto ao Background.*/
