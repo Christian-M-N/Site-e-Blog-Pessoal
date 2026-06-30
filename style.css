@@ -7,8 +7,28 @@ body{
 color: white;
 /* NOTA DE DEV: Não é necessário coloriar cada "Heading" com a cor branca para o efeito que quero, a propriedade "color"
 faz com que a cor de todos os elementos no HTML que herdam a propriedade "color" fiquem com essa cor, e o resto do comando abaixo serve para criar excessões na coloração e layout. */
+
 background: #001826;
+    
+/* NOTA DE DEV 30/06/2026 : APÓS testar hoje como ficam as estrelas com o "background-attachment: fixed;" na minha página, 
+percebi que as estrelas fixas não são o que eu quero, portanto, será removido do código. */
+
 } /* NOTA DE DEV: Cor de backgroud pega em um site para criador de gradientes :https://cssgradient.io/
 Serviu para poupar tempo, mas entendo depois como funcionar, cada elemento é escrito.
  /* NOTA DE DEV: Deixei somente com uma cor básica para ser o meu padrão do site por enquanto. */
-/*Se a opacidade for escrita diretamente no "body", o texto no arquivo HTML vai ficar transparente junto ao Background.*/
+/*Se a opacidade for escrita diretamente no "body", o texto no arquivo HTML e os outros elementos "criança" dentro do elemtento do HTML <body>
+vão ficar transparente junto ao Background.*/
+/* NOTA DE DEV; IMPORTANTE: É possível CRIAR elementos no HTML para que eles recebam as propriedades de aparência aqui.
+ Eles, aqui no CSS, são categorizados com um ponto (".") seguido do nome do elemento que eu defini no HTML com o <div></div>. */
+
+/* NOTA DE DEV 30/06/2026 : O CSS não funciona que nem Python, mesmo que um elemento que está seleciondo por aqui esteja dentro de outro
+aqui eles devem ser escritos sepradamente, com cada divisão e elemento tendo seu próprio setor no código CSS.  */
+#background{
+    /* NOTA DE DEV 30/06/2026 : Comando para as estrelas movidos para o elemento <div> com ID de "background", após o aprendizado de classes e id. */
+    /* Estrelas do Background. */
+/* NOTA DE DEV: A sintaxe de CSS define Ponto e vírgula como o FIM dos parâmetros de uma atribuição do elemento, 
+com vírgula definindo os próximos itens */
+    background-image: /* Comando para a imagem de background de fato, pode ser um Url de uma imagem ou algo desenhado "a mão" usando o código. */
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 4px, transparent 4px);    
+}
